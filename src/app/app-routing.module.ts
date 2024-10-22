@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
-const routes: Routes = [];
-
-// import { AbcComponent } from './components/abc/abc.component';
-// import { DefComponent } from './components/def/def.component';
-
-// export const routes: Routes = [
-//   { path: '', redirectTo: 'abc', pathMatch: 'full' },
-//   { path: 'abc', component: AbcComponent },
-//   { path: 'def', component: DefComponent },
-// ];
-
+export const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'home', component: HomeComponent },
+  
+];
 
 // ng serve -o (auto open browser)
 // ng g c login
